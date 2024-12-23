@@ -2,6 +2,9 @@ import BlogCard from "@/components/blogCard/BlogCard";
 import { Poppins } from "next/font/google"
 import Image from "next/image";
 import Link from "next/link";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+
+
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -11,7 +14,7 @@ const poppins = Poppins({
 export default function Home() {
   return (
     <>
-      <div className="w-screen flex flex-col justify-center items-center mb-20">
+      <div className=" w-screen flex flex-col justify-center items-center mb-20">
 
         {/* main headings */}
         <div className="flex justify-center items-center gap-10 mt-20 flex-wrap">
@@ -43,7 +46,20 @@ export default function Home() {
         <h1 className="text-5xl font-bold mb-10">Latest Blogs</h1>
 
         {/* cards */}
-       <BlogCard/>
+
+        <Tabs defaultValue="account" className="w-[400px]">
+          <TabsList className="w-full mb-5 bg-[#1b2232]">
+            <TabsTrigger value="Web Dev">Web Dev</TabsTrigger>
+            <TabsTrigger value="password">AI</TabsTrigger>
+          </TabsList>
+
+          <TabsContent value="Web Dev"><BlogCard /></TabsContent>
+          <TabsContent value="password">
+            <h1 className="text-4xl ">COMING SOON....</h1>
+          </TabsContent>
+        </Tabs>
+
+        
 
       </div>
     </>

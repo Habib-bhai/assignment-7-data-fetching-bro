@@ -1,8 +1,8 @@
 "use client"
 import { useState } from 'react';
 import { Agbalumo } from "next/font/google"
-import { Poppins } from "next/font/google"
 import Link from "next/link"
+import { Poppins } from "next/font/google"
 
 const poppins = Poppins({
     subsets: ["latin"],
