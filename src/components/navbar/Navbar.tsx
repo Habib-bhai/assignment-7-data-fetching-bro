@@ -2,12 +2,6 @@
 import { useState } from 'react';
 import { Agbalumo } from "next/font/google"
 import Link from "next/link"
-import { Poppins } from "next/font/google"
-
-const poppins = Poppins({
-    subsets: ["latin"],
-    weight: '400'
-})
 
 const agbalumo = Agbalumo({
     subsets: ['latin'],
