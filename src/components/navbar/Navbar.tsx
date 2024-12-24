@@ -30,9 +30,9 @@ export default function Navbar() {
                 </Link>
                     
                     <div className="hidden lg:flex gap-10">
-                        <Link href={"/"} className="text-lg mt-2">About Techie</Link>
-                        <Link href={"/"} className="text-lg mt-2">Learn Tech</Link>
-                        <Link href={"/"} className="text-lg mt-2">Blog</Link>
+                        <Link href={"/about"} className="text-lg mt-2">About Techie</Link>
+                        <Link href={"/learnTech"} className="text-lg mt-2">Learn Tech</Link>
+                        <Link href={"/blog"} className="text-lg mt-2">Blog</Link>
                     </div>
                 </div>
 

@@ -18,7 +18,7 @@ interface dataTypes {
 }
 
 
-export default function page() {
+export default function CsrPage() {
 
   const url = "https://fakestoreapi.com/products"
   
@@ -39,8 +39,8 @@ export default function page() {
       }
 
       fetchData()
-    }, 100);
-  }, [] )
+    }, 1000);
+  }, [])
   return (
     <>
 
@@ -58,9 +58,9 @@ export default function page() {
             <div className="mt-10  text-lg text-center  font-semibold text-gray-300"><span className='tracking-[0.5rem]'>Loading.....</span> Content Is On the Way</div>
           </div>
           :
-          <div className='flex flex-wrap justify-center items-center gap-5'> 
+          <div className='w-screen  grid grid-cols-1  gap-5  xl:grid-cols-3 place-items-center place-content-center'> 
           {
-            data.map((item, index) => <div key={index} className="bg-white text-black w-[300px] flex flex-col items-start pl-2 justify-center rounded-xl">
+            data.map((item, index) => <div key={index} className="col-span-1 bg-white text-black w-[300px] md:w-[450px] min-h-[600px] flex flex-col items-start pl-2 justify-center rounded-xl">
 
                 <Image src={item.image} alt="image" height={1000} width={1000} className='w-[100%] object-cover h-[300px] rounded-xl' />
 
