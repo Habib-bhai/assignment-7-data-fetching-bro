@@ -39,7 +39,7 @@ export default function CsrPage() {
       }
 
       fetchData()
-    }, 1000);
+    }, 5000);
   }, [])
   return (
     <>
@@ -55,7 +55,7 @@ export default function CsrPage() {
               {/* Central Glow */}
               <div className="absolute w-6 h-6 bg-primaryPurple rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-ping"></div>
             </div>
-            <div className="mt-10  text-lg text-center  font-semibold text-gray-300"><span className='tracking-[0.5rem]'>Loading.....</span> Content Is On the Way</div>
+            <div className="mt-10  text-lg text-center flex flex-col gap-2 font-semibold text-gray-300"><span className='tracking-[0.5rem]'>Loading.....</span> Content Is On the Way</div>
           </div>
           :
           <div className='w-screen  grid grid-cols-1  gap-5  xl:grid-cols-3 place-items-center place-content-center'> 

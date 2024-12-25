@@ -22,7 +22,7 @@ export default function RederingBlog() {
       </div>
 
       {/*short over view  */}
-      <p className='text-lg font-normal w-[60%] text-gray-400 mt-10'>
+      <p className='text-lg font-normal text-center mb-20 md:w-[60%] text-gray-400 mt-10'>
         In Next.js, rendering can be done using Client-Side Rendering (CSR) or Server-Side Rendering (SSR). CSR loads content on the client side after the initial page load, enhancing interactivity and reducing server load but potentially affecting SEO. SSR, on the other hand, generates HTML on the server for each request, improving SEO and initial load time. CSR is ideal for dynamic apps with minimal SEO requirements, while SSR is preferred for content-heavy sites requiring fast load times and search engine optimization.
       </p>
 

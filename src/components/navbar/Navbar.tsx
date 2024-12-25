@@ -48,7 +48,7 @@ export default function Navbar() {
 
             {/* Dropdown Menu for Mobile */}
             {isMenuOpen && (
-                <div className='z-50 absolute top-1/4 w-full flex justify-center items-center bg-[#1b2232]'>
+                <div className='z-50 h-screen fixed top-1/4 w-full flex justify-center items-center bg-[#1b2232]/70 backdrop-blur-md '>
                 <div className=" lg:hidden  text-white  text-center py-4 flex flex-col justify-center items-start gap-5">
                     <Link href={"/about"} onClick={()=> setIsMenuOpen(false)} className="block text-lg mt-2">About Techie</Link>
                     <Link href={"/learnTech"} onClick={()=> setIsMenuOpen(false)} className="block text-lg mt-2">Learn Tech</Link>
