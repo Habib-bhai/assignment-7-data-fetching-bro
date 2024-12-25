@@ -47,7 +47,7 @@ export default function Home() {
 
         {/* cards */}
 
-        <Tabs defaultValue="account" className="w-[400px]">
+        <Tabs defaultValue="account" className="w-screen md:w-[400px]">
           <TabsList className="w-full mb-5 bg-[#1b2232]">
             <TabsTrigger value="Web Dev">Web Dev</TabsTrigger>
             <TabsTrigger value="password">AI</TabsTrigger>

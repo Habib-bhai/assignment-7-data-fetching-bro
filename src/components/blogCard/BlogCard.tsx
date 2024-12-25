@@ -5,7 +5,7 @@ import React from 'react'
 export default function BlogCard() {
   return (
     <Link href={"/blog/rendering"}>
-    <div className="group border-[1px] border-white rounded-3xl  p-10  flex justify-center items-center gap-14 flex-wrap">
+    <div className="group border-[1px] border-white rounded-3xl  p-10  flex justify-center items-center mx-5 md:mx-0 gap-14 flex-wrap">
 
     <Image src={"/images/making.svg"} alt="icon" height={80} width={80} />
     
