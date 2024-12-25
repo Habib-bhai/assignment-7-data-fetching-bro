@@ -39,7 +39,7 @@ export default function CsrPage() {
       }
 
       fetchData()
-    }, 5000);
+    }, 8000);
   }, [])
   return (
     <>
