@@ -32,8 +32,8 @@ export default function Navbar() {
 
                 {/* Navbar Buttons */}
                 <div className="hidden md:flex gap-10">
-                    <Link href={"/"} className="text-lg mt-4">Login</Link>
-                    <Link href={"/"} className="text-lg mt-2 h-12 bg-PrimaryPurple flex justify-center items-center w-52 rounded-xl">Become a Techie</Link>
+                    <Link href={"/login"} className="text-lg mt-4">Login</Link>
+                    <Link href={"/signup"} className="text-lg mt-2 h-12 bg-PrimaryPurple flex justify-center items-center w-52 rounded-xl">Become a Techie</Link>
                 </div>
 
                 {/* Hamburger Menu for Mobile */}

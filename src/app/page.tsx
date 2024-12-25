@@ -32,8 +32,8 @@ export default function Home() {
 
         {/* buttons/links  */}
         <div className="flex justify-center items-center gap-7 mt-10 flex-wrap">
-          <Link href={"/"} className="flex justify-center items-center h-[56px] w-[168px] bg-PrimaryPurple rounded-lg">Join Now</Link>
-          <Link href={"/"} className="flex justify-center items-center h-[56px] w-[168px] rounded-lg border-[2px] border-white">Learn Tech </Link>
+          <Link href={"/signup"} className="flex justify-center items-center h-[56px] w-[168px] bg-PrimaryPurple rounded-lg">Join Now</Link>
+          <Link href={"/learnTech"} className="flex justify-center items-center h-[56px] w-[168px] rounded-lg border-[2px] border-white">Learn Tech </Link>
         </div>
 
 

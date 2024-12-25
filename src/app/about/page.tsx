@@ -12,10 +12,10 @@ export default function About() {
                 </p>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-8 items-center">
+            <div className="flex flex-col sm:flex-row gap-8 juctify-center items-center">
                 {/* Profile Image */}
-                <div className="relative w-screen md:w-1/2 h-[500px] overflow-hidden">
-                    <div className="w-screen  rounded-[0_50px_0_50px] overflow-hidden ">
+                <div className="relative w-screen align-middle md:w-1/2 h-[500px] overflow-hidden">
+                    <div className="w-screen align-middle rounded-[0_50px_0_50px]  overflow-hidden ">
                         {/* Using placeholder API for demo - replace src with your actual image URL */}
                         <Image
                             src="/images/myImg.jpeg"
