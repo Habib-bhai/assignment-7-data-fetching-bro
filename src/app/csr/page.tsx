@@ -58,7 +58,7 @@ export default function CsrPage() {
             <div className="mt-10  text-lg text-center flex flex-col gap-2 font-semibold text-gray-300"><span className='tracking-[0.5rem]'>Loading.....</span> Content Is On the Way</div>
           </div>
           :
-          <div className='w-screen  grid grid-cols-1  gap-5  xl:grid-cols-3 place-items-center place-content-center'> 
+          <div className='w-screen  grid grid-cols-1  gap-5  xl:grid-cols-3 place-items-center place-content-center overflow-x-hidden'> 
           {
             data.map((item, index) => <div key={index} className="col-span-1 bg-white text-black w-[300px] md:w-[450px] min-h-[600px] flex flex-col items-start pl-2 justify-center rounded-xl">
 
