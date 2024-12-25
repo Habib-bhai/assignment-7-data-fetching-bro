@@ -50,11 +50,11 @@ export default function Navbar() {
             {isMenuOpen && (
                 <div className='z-50 absolute top-1/4 w-full flex justify-center items-center bg-[#1b2232]'>
                 <div className=" lg:hidden  text-white  text-center py-4 flex flex-col justify-center items-start gap-5">
-                    <Link href={"/about"} className="block text-lg mt-2">About Techie</Link>
-                    <Link href={"/learnTech"} className="block text-lg mt-2">Learn Tech</Link>
-                    <Link href={"/blog"} className="block text-lg mt-2">Blog</Link>
-                    <Link href={"/login"} className="block text-lg mt-2">Login</Link>
-                    <Link href={"/signup"} className=" text-lg mt-2 h-12 bg-PrimaryPurple flex justify-start pl-2 items-center w-40 rounded-xl">Become a Techie</Link>
+                    <Link href={"/about"} onClick={()=> setIsMenuOpen(false)} className="block text-lg mt-2">About Techie</Link>
+                    <Link href={"/learnTech"} onClick={()=> setIsMenuOpen(false)} className="block text-lg mt-2">Learn Tech</Link>
+                    <Link href={"/blog"} onClick={()=> setIsMenuOpen(false)} className="block text-lg mt-2">Blog</Link>
+                    <Link href={"/login"} onClick={()=> setIsMenuOpen(false)} className="block text-lg mt-2">Login</Link>
+                    <Link href={"/signup"} onClick={()=> setIsMenuOpen(false)} className=" text-lg mt-2 h-12 bg-PrimaryPurple flex justify-start pl-2 items-center w-52 rounded-xl">Become a Techie</Link>
                 </div>
                 </div>
             )}
